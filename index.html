@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag N Drop Bit</title>
+    <script src="./app.js" defer ></script>
+
+</head>
+<body>
+<header class="blurr">
+<h4>Drag N Drop Bit </h4>  
+<section aria-labelledby="">
+<div class="dragElem-icon" id='dragIcon'  draggable="true" >0</div>  
+<div class="dragElem-icon" id='dragIcon2'  draggable="true" id="2">1</div>
+</section>   
+</header>
+
+    <div class="sub-head">
+       <span>Your job is to convert the whole number into it's binary form.. </span> 
+       <button class="blurr instructionsBtn">Click Here For Instructions</button>
+          
+
+    </div>
+    <aside class="hide blurr">
+    <span class="closeInstructions">X</span>
+        <h5>How To Play</h5>
+         
+         <ol>
+             <li>Your given a whole number which in our first example is 10 which must be turned into binary.</li>
+             <li>click below to learn how to convert a whole number into its binary form. <br><br> <button class="openDiagram">Click to view diagram</button></li>
+             <li> <b>last step</b> once you've converted your whole number into binary, reorder codes to equal that binary number  <br> <br> <img src="./drag-drop-demo.gif" width="76%" alt=""> </li>    
+             <li> Hints - there is a section near end of page to get more codes if needed for next questions </li>        
+        </ol>
+     </aside>
+<main>
+<div class="demo-diagram-container hide">
+  <p class="binary-convertor-text"><b>Binary convertor chart</b></p>
+<div class="img-container">
+  <img class="conversionChart-img" src="./images/Screenshot 2023-11-22 at 12.37.07 PM.png"  alt="">
+</div>`
+  <img class="gameplay-demo" src="./images/gameplay_demo.gif" width="470" height="240"></img>
+  <button id="continue_btn">continue</button>
+</div>
+
+     <section  class="binary-chart-container blurr"> 
+      
+        <div class="digit">128</div>
+        <div class="digit">64</div>
+        <div class="digit">32</div>
+        <div class="digit">16</div>
+        <div class="digit">8</div>
+        <div class="digit">4</div>
+        <div class="digit">2</div>
+        <div class="digit">1</div>  
+        
+        
+    </section>
+
+    <div id="whole-number" class="whole-number blurr">10</div>
+ 
+<section class="dragElem-container blurr">
+    <div class="dragElem"  draggable="true" id="1">0</div>
+    <br>
+    <div class="dragElem"  draggable="true" id="2">1</div>
+    <br>
+    <div class="dragElem"  draggable="true" id="3">0</div>
+    <br>
+    <div class="dragElem"  draggable="true" id="4">1</div>
+    <br>
+</section>
+
+
+
+<p class="blurr">- Note sometimes you'll need to grab more digits to solve problem. <p>
+    <section class="get-more-codes blurr">
+        <h5>More Digits</h5>
+        <div class="extra-codes">
+            <div id='5'class="dragElem" class="extra-dragElem" draggable="true">1</div>
+            <div id='6' class="dragElem"class="extra-dragElem" draggable="true">0</div>
+            </div>
+        </section>
+        
+</main>
+
+</body>
+</html> 

@@ -1,0 +1,286 @@
+body {
+ 
+  font-family: 'Courier New', Courier, monospace;
+  
+}
+
+h4 {
+  color: burlywood;
+  font-size: 20px;
+  margin-top: 12px;
+  width: 12rem;
+}
+
+h4:hover {
+  color: grey;
+  cursor: pointer;
+}
+
+header {
+ 
+ 
+  display: flex;
+  align-items: center;
+  margin-bottom: 23px;
+
+  
+}
+.sub-head{
+
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  
+}
+main {
+
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+aside  {
+  position: absolute;
+  border-right: 1px solid grey;
+  padding: 7px;
+  width: 19%;
+  background-color: bisque;
+}
+.closeInstructions{
+  color: grey;
+  display: flex;
+  flex-direction: row-reverse;
+  cursor: pointer;
+
+}
+
+h5 {
+  text-decoration: underline;
+  text-align: center;
+  color: gray;
+  text-align: center;
+  margin-bottom: 22px;
+  font-size: 16px;
+}
+
+.instructionsBtn{
+border: none;
+padding: 30px;
+ width: 50%;
+ animation: updown 4s ease infinite;
+ color:burlywood;
+ font-weight: bold;
+ margin:auto; 
+}
+
+@keyframes updown {
+  0% {
+    transform: translateY(-20%);
+  }
+
+  50% {
+    transform: translateY(20%);
+  }
+
+  100% {
+    transform: translateY(-10%);
+  }
+}
+   
+
+
+ol li {
+  margin-top: 33px;
+  border-radius: 12px;
+  color: grey;
+}
+
+.binary-chart-container {
+  height: 55px;
+  display: flex;
+  width: 50%;
+  margin: auto;
+  margin-bottom: 42px;
+  border: 1px solid #c2bebe;
+    box-shadow: 4px 2px 2px rgb(248, 205, 152);
+
+}
+
+.binary-chart-container div {
+  margin-left: 22px;
+  font-size: 21px;
+  width: 30%;
+  color: grey;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+
+}
+
+.fade-unused-num{
+  opacity: 0.1;
+  display: none;
+
+}
+
+.dragElem-container {
+  display: flex;
+  width: 57%;
+  justify-content: space-evenly;
+
+}
+.gameplay-demo,.conversionChart-img{
+ 
+
+}
+.demo-diagram-container{
+display: flex;
+flex-direction: column;
+z-index: 1;
+align-items: center;
+}
+.conversionChart-img{
+  margin-bottom: 32px;
+
+}
+#continue_btn{
+width: 150px;
+padding: 10px;
+margin-top: 23px;
+background-color: rgba(29, 29, 235, 0.363);
+color: white;
+}
+.hide{
+  display: none;
+
+}
+
+.img-container img{
+ 
+ width: 100%;
+}
+button{
+ 
+  padding: 1px;
+  width: 70%;
+  color: rgba(83, 83, 83, 0.445);
+  border: 1px solid gray;
+  background-color: transparent;
+  padding: 12px;
+}
+.binary-convertor-text{
+  color: grey;
+  font-size: 17px;
+}
+.binarychart-convertor{
+border: 1px solid grey;
+}
+ 
+.dragElem, .extra-dragElem,.dragElem-icon {
+  height: 3px;
+  width: 2%;
+  padding: 20px 18px 25px 18px;
+  /*background-color: rgba(219, 212, 212, 0.336);*/
+  color: #6d6d6d;
+  border-radius: 7px;
+  border: 1px solid gray;
+  text-align: center;
+  box-shadow: 4px 2px 2px rgb(248, 205, 152);
+}
+
+#dragIcon{
+position: absolute;
+width: 8px;
+height: 1px;
+padding: 12px 12px 22px;
+}
+
+#dragIcon2{
+position: relative;
+left: 17px;
+top: 20px;
+width: 8px;
+padding: 14px;
+height: 3px;
+background-color: bisque;
+
+
+}
+
+p {
+  width: 69%;
+  margin: auto;
+  margin-top: 53px;
+  font-size: .9rem;
+  text-align: center;
+}
+
+.draggingOver {
+  opacity: 0.3;
+}
+
+.whole-number {
+  font-family: 'Courier New', Courier, monospace;
+  border-radius: 12px;
+  padding: 12px;
+  margin-bottom: 44px;
+  font-weight: 600;
+  font-size: 23px;
+  background-color: transparent;
+  color: grey;
+}
+
+.extra-codes {
+  display: flex;
+}
+
+.blur{
+  filter: blur(8px);
+
+}
+
+
+.extra-codes .dragElem, .extra-codes .extra-dragElem {
+  margin-left: 22px;
+}
+
+@media (max-width: 754px) {
+  .binary-chart-container {
+    width: 70%;
+  }
+  .binary-chart-container div {
+    font-size: 1rem;
+  }
+  aside{
+    
+    width: 70%;
+    margin: auto;
+  }
+}
+
+@media (max-width: 445px) {
+  .binary-chart-container {
+    width: 85%;
+  }
+  .binary-chart-container div {
+    font-size: .9rem;
+  }
+  .gameplay-demo{
+  width: 320px;
+  height: 140px;
+  }
+}
+
+@media (max-width: 350px) {
+  .binary-chart-container {
+    width: 92%;
+  }
+  .binary-chart-container div {
+    font-size: .8rem;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
